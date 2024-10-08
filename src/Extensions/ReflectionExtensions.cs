@@ -36,6 +36,8 @@ namespace SmartBreadcrumbs.Extensions
 
         public static string ExtractRazorPageKey(this Type pageType)
         {
+            string typename = pageType.FullName;
+
             if (pageType == null)
                 throw new ArgumentNullException(nameof(pageType));
 

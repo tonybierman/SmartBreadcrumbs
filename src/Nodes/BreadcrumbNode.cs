@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using SmartBreadcrumbs.Attributes;
+using System.Collections.Generic;
 
 namespace SmartBreadcrumbs.Nodes
 {
@@ -27,6 +28,25 @@ namespace SmartBreadcrumbs.Nodes
         {
 
         }
+
+        //protected BreadcrumbNode(string title, bool overwriteTitleOnExactMatch = false, string iconClasses = null, string areaName = null, List<object> routeParams = null)
+        //{
+        //    Title = title;
+        //    OriginalTitle = Title;
+        //    OverwriteTitleOnExactMatch = overwriteTitleOnExactMatch;
+        //    IconClasses = iconClasses;
+
+        //    // Initialize routeParams if it's null
+        //    routeParams ??= new List<object>();
+
+        //    // Add areaName if it's not null or whitespace
+        //    if (!string.IsNullOrWhiteSpace(areaName))
+        //    {
+        //        routeParams.Add(new { area = areaName.Trim() });
+        //    }
+
+        //    RouteValues = routeParams;
+        //}
 
         protected BreadcrumbNode(string title, bool overwriteTitleOnExactMatch = false, string iconClasses = null, string areaName = null)
         {
